@@ -1,4 +1,7 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 70px;
   padding-right: 70px;
   height: 74px;
@@ -7,4 +10,11 @@
 
 .header__nav {
   width: 100%;
+}
+
+.header__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
 }

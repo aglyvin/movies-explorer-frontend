@@ -1,5 +1,32 @@
 .promo {
   background-color: #465DFF;
-  width: 100%;
+  max-width: 1280px;
   min-height: 648px;
+  padding: 75px 70px 50px 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 190px;
+}
+
+
+
+@media (max-width: 937px) {
+  .promo {
+    height: 834px;
+    max-width: calc(100% - 40px);
+    padding: 342px 24px 37px;
+    flex-direction: column-reverse;
+  }
+}
+
+.promo__title {
+  font-size: 50px;
+  line-height: 58px;
+  font-weight: 400;
+}
+
+.promo__logo {
+  width: 310px;
+  height: 304px;
 }

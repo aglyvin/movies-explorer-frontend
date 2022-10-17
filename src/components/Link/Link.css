@@ -1,0 +1,12 @@
+.link {
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .link__item {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: white;
+    text-decoration: none;
+  }
