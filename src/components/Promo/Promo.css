@@ -1,32 +1,113 @@
 .promo {
-  background-color: #465DFF;
-  max-width: 1280px;
-  min-height: 648px;
-  padding: 75px 70px 50px 70px;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  gap: 190px;
+    padding: 155px 0 75px;
+    background-color: #465DFF;
+    margin-top: -80px;
 }
-
-
-
-@media (max-width: 937px) {
-  .promo {
-    height: 834px;
-    max-width: calc(100% - 40px);
-    padding: 342px 24px 37px;
+@media screen and (max-width: 425px){
+    .promo {
+        padding: 144px 0 30px;
+ }
+}
+.promo__content-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px){
+    .promo__content-container {
     flex-direction: column-reverse;
-  }
+    align-items: center;
+ }
+}
+@media screen and (max-width: 425px){
+    .promo__content-container {
+        padding: 0 5px;
+ }
+}
+.promo__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 640px;
 }
 
-.promo__title {
-  font-size: 50px;
-  line-height: 58px;
-  font-weight: 400;
+@media screen and (max-width: 768px){
+    .promo__text-container {
+    align-items: center;
+    padding-top: 48px;
+ }
+}
+@media screen and (max-width: 768px){
+    .promo__text-container {
+    padding-top: 44px;
+ }
+}
+.promo__header {
+    color: white;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: 400;
+    margin: 0;
+}
+@media screen and (max-width: 768px){
+    .promo__header {
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+ }
+}
+@media screen and (max-width: 425px){
+    .promo__header {
+    font-size: 30px;
+    line-height: 38px;
+ }
+}
+.promo__text {
+    font-size: 13px;
+    max-width: 310px;
+    padding: 36px 0 146px;
+    line-height: 16px;
+    color: white;
+    margin: 0;
+}
+@media screen and (max-width: 768px){
+    .promo__text {
+    padding: 22px 0 92px;
+    text-align: center;
+ }
+}
+@media screen and (max-width: 425px){
+    .promo__text {
+    padding: 24px 0 80px;
+    max-width: 260px;
+ }
+}
+.promo__button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 129px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+.promo__button:hover {
+    cursor: pointer;
+}
+.promo__button-link {
+    text-decoration: none;
+    color: white;
 }
 
-.promo__logo {
-  width: 310px;
-  height: 304px;
+@media screen and (max-width: 425px){
+    .promo__img {
+        width: 206px;
+        height: 210px;
+ }
 }
