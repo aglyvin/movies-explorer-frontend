@@ -11,13 +11,11 @@ export function Movies() {
   return (
     <>
       <Header loggedIn={true} />
-      {/* <main className="movies">
+      <main className="movies">
         <SearchForm 
         />
-        <Preloader
-        />
         <MoviesCardList
-        // movies={props.movies}
+
         button="movies__like-button" 
         />
         <button
@@ -27,7 +25,7 @@ export function Movies() {
         >
           Ещё
         </button>
-      </main> */}
+      </main>
       <Footer />
     </>
   );

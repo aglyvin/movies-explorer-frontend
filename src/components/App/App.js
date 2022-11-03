@@ -1,20 +1,16 @@
 import { Main } from "../Main/Main";
 import { Movies } from "../Movies/Movies";
 import React from "react";
-import { Route, Switch, useHistory, useLocation, Redirect } from "react-router-dom";
+import { Route, Routes, useHistory, useLocation, Redirect } from "react-router-dom";
 import "./App.css"
 
 function App() {
   return (
     <div className="app">
-      <Switch>
-        <Route exact path="/">
-          <Main/>
-        </Route>
-        <Route exact path="/movies">
-          <Movies/>
-        </Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Main/>}/>
+        <Route exact path="/movies" element={<Movies/>}/>
+      </Routes>
     </div>
   );
 }
